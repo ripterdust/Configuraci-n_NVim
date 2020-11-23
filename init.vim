@@ -20,6 +20,7 @@ call plug#begin('.~/.vim/plugged')
 
 
 Plug 'rafi/awesome-vim-colorschemes' 
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 
 " Funcionalidades
@@ -44,7 +45,7 @@ call plug#end()
 " Ajustes con los plugins
 " Tema
 
-colorscheme PaperColor
+colorscheme dracula
 
 " Plugins
 "
@@ -55,7 +56,7 @@ let mapleader=" "
 nmap <Leader>s <Plug>(easymotion-s2)
 
 " Nerdtree configuration
-nmap <Leader>nt :NERDTreeFind<CR>
+nmap <Leader>t :NERDTreeFind<CR>
 
 " PlugUpdate
 nmap <Leader>p :PlugUpdate<CR>
